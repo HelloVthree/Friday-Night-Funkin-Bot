@@ -24,6 +24,11 @@ This script relies on **hardcoded screen coordinates and color values**:
 
 Because these coordinates depend heavily on your monitor's resolution, window size, and game layout, **you will likely need to adjust these numbers** in `BotFNF1.py` to match your specific setup.
 
+## ⚠️ Important Limitations (Why it might fail)
+
+* **Does Not Support Hold Notes:** This script only performs short taps (`press_A`, `press_W`, `press_S`, `press_D`) with a fixed 0.05-second press duration. If a song or chart requires you to **hold** a note down, this script will let go immediately, causing you to miss/fail the hold note.
+* **Fails on Different Color Codes:** The bot relies on exact hardcoded RGB color tuples (e.g., `(194, 75, 153)` for A, `(18, 250, 5)` for W, etc.). If you play a level, mod, or song that uses **different note colors**, custom charts, or changing UI themes, the script will completely fail to recognize the notes.
+
 ---
 
 ## How to Run
