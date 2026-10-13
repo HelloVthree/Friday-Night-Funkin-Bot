@@ -38,11 +38,11 @@ Because these coordinates depend heavily on your monitor's resolution, window si
 
 ## How to Run
 
-1. Open your terminal or command prompt in the folder containing `BotFNF1.py`.
+1. Open your terminal or command prompt in the folder containing `FNF_bot_V2.py`.
 2. Start your game of Friday Night Funkin' and position the game window so that the pixel check locations match your script coordinates.
 3. Run the script using Python:
    ```bash
-   python BotFNF1.py
+   python FNF_bot_V2.py
    ```
 4. The console will print `started`, and the bot will begin monitoring those pixel areas and pressing keys automatically.
 
