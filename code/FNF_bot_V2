@@ -1,0 +1,56 @@
+import sys
+import time
+import pyautogui
+from pynput.keyboard import Controller, Listener
+#-------------------------------
+def press_A ():
+    keyboard.press('a')
+    time.sleep(0.05)
+    keyboard.release('a')
+
+#-------------------------------
+def press_W ():
+    keyboard.press('w')
+    time.sleep(0.05)
+    keyboard.release('w')
+
+#-------------------------------
+def press_S ():
+    keyboard.press('s')
+    time.sleep(0.05)
+    keyboard.release('s')
+
+#--------------------------------
+def press_D ():
+    keyboard.press('d')
+    time.sleep(0.05)
+    keyboard.release('d')
+
+# Function to listen for the 'p' key to exit
+def on_press(key):
+    try:
+        if key.char == 'p':
+            print("\n[!] 'p' pressed. Stopping bot...")
+            sys.exit(0)
+    except AttributeError:
+        pass
+
+# Start the keyboard listener in the background
+listener = Listener(on_press=on_press)
+listener.start()
+
+keyboard = Controller()
+print("started. Press 'p' at any time to stop.")
+
+while True:
+    if pyautogui.pixel(1115, 206) == (194, 75, 153):
+        press_A()
+
+    elif pyautogui.pixel(1285, 206)[0] == 0:
+        press_S()
+
+    elif pyautogui.pixel(1437, 206) == (18, 250, 5):
+        press_W()
+
+    elif pyautogui.pixel(1596, 206) == (249, 57, 63):
+        press_D()
