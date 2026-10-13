@@ -1,4 +1,4 @@
-# FNF Python Bot (`BotFNF1.py`)
+# FNF Python Bot (`FNF_bot_V2.py`)
 
 A simple Python automation script designed to play Friday Night Funkin' by detecting specific pixel colors on the screen and simulating key presses (`A`, `W`, `S`, `D`).
 
