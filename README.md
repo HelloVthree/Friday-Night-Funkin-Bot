@@ -2,6 +2,9 @@
 
 A simple Python automation script designed to play Friday Night Funkin' by detecting specific pixel colors on the screen and simulating key presses (`A`, `W`, `S`, `D`).
 
+![](Images/Image_dashboard.png)
+
+
 ---
 
 ## Prerequisites
@@ -21,6 +24,8 @@ pip install pyautogui pynput
 This script relies on **hardcoded screen coordinates and color values**:
 * **Coordinates:** `(1115, 206)`, `(1285, 206)`, `(1437, 206)`, `(1596, 206)`
 * **Colors:** RGB tuples like `(194, 75, 153)`, etc.
+
+![](Images/Image_arrow.png)
 
 Because these coordinates depend heavily on your monitor's resolution, window size, and game layout, **you will likely need to adjust these numbers** in `BotFNF1.py` to match your specific setup.
 
