@@ -27,7 +27,7 @@ This script relies on **hardcoded screen coordinates and color values**:
 
 ![](Images/Image_arrow.png)
 
-Because these coordinates depend heavily on your monitor's resolution, window size, and game layout, **you will likely need to adjust these numbers** in `BotFNF1.py` to match your specific setup.
+Because these coordinates depend heavily on your monitor's resolution, window size, and game layout, **you will likely need to adjust these numbers** in `FNF_bot_V2.py` to match your specific setup.
 
 ## ⚠️ Important Limitations (Why it might fail)
 
